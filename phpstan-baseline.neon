@@ -223,12 +223,6 @@ parameters:
 			path: WebServices/Controllers/ReservationSaveController.php
 
 		-
-			message: '#^Class AuthenticationResponse does not have a constructor and must be instantiated without any parameters\.$#'
-			identifier: new.noConstructor
-			count: 1
-			path: WebServices/Responses/AuthenticationResponse.php
-
-		-
 			message: '#^Method ScheduleWebServicePageBuilder\:\:GetGroupId\(\) should return int but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -263,18 +257,6 @@ parameters:
 			identifier: parameter.implicitlyNullable
 			count: 1
 			path: lib/Application/Reporting/ReportColumn.php
-
-		-
-			message: '#^Class InviteeRemovedEmail constructor invoked with 4 parameters, 5 required\.$#'
-			identifier: arguments.count
-			count: 1
-			path: lib/Application/Reservation/Notification/InviteeUpdatedEmailNotification.php
-
-		-
-			message: '#^Access to an undefined property ScheduleAvailabilityRule\:\:\$timezone\.$#'
-			identifier: property.notFound
-			count: 1
-			path: lib/Application/Reservation/Validation/ScheduleAvailabilityRule.php
 
 		-
 			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$session \(UserSession\) is implicitly nullable via default value null\.$#'
